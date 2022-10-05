@@ -13,7 +13,7 @@ You can assume that neither firstName nor lastName will be blank
 ------------------------------------------------------------------------------------------------ */
 const toLastNames = people => {
   // Solution code here...
-  let newNames = people.map( peope ()=> firstName + lastName;
+  let newNames = people.map( persons => persons.firstName + ' ' + persons.lastName);
   return newNames;
 };
 
@@ -25,11 +25,10 @@ Write a function named addValues that, given an array of numbers as input, uses 
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr) => {
-  // Solution code here...
- let addedNumber = arr.reduce( acc, cVal) => {
-    acc += cVal;
-    return addedNumber;
-  })
+//   // Solution code here...
+  let addedNumber = arr.reduce((acc, cVal) => acc+cVal, 0);
+  return addedNumber;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -46,6 +45,8 @@ Write a function named addPurchases that, given an array of objects as input, us
 
 const addPurchases = (arr) => {
   // Solution code here...
+  const totals = arr.reduce((acc, cVal) => acc+=cVal.purchasePrice, 0);
+  return totals;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -57,7 +58,10 @@ Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
 const countNumberOfElements = (arr) => {
-  // Solution code here...
+  let length = arr.reduce((acc,cVal, i) => {
+    return i+1;
+  });
+  return length;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -118,6 +122,10 @@ let starWarsData = [{
 
 const returnNames = (arr) => {
   // Solution code here...
+  return arr.reduce((acc, cVal) => {
+    acc.push(cVal.name);
+    return acc;
+  }, []);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -130,6 +138,9 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 
 const reversedString = (str) => {
   // Solution code here...
+  return str.split('').reduce((acc, cVal)=> {
+    return cVal + acc;
+  }, '');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -183,7 +194,9 @@ const characters = [
 
 const countNumberOfChildren = (arr) => {
   // Solution code here...
+  let numberofCha;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 8 - Stretch Goal
