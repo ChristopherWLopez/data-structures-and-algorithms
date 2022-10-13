@@ -129,7 +129,7 @@ const gruffaloCrumble = {
 
 const listFoods = (recipe) => {
   let result = [];
-  // Solution code here...
+  result.push(recipe.ingredients.split(0, 1));
   return result;
 };
 
