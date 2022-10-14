@@ -55,7 +55,20 @@ let characters = [
 const sortByChildren = (charArray) => {
   // Solution code here...
   charArray.sort(() => {});
+
+  function compareAscendingValues(a, b){
+    if (a.children.length < b.children.length){
+      return -1;
+    }
+    if (a.children.length > b.children.length){
+      return 1;
+    } else{
+      return a.house > b.house ? 1 : -1;
+    }
+  }
+  return charArray.sort(compareAscendingValues);
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -94,7 +107,7 @@ Write a function named containsWorld that takes in a string or number of any len
 ------------------------------------------------------------------------------------------------ */
 
 const containsWorld = (input) => {
-  const containsW = /(world)/;
+  const containsW = /world/;
   return containsW.test(input);
 };
 
@@ -107,8 +120,8 @@ Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
 const isCapitalized = (str) => {
-  let yesCap = /^[A-Z]/gi;
-  return yesCap.test(str);
+  let yesCap = /[A-Z]\w+/g;
+  return str.match(yesCap) || [];
 };
 
 /* ------------------------------------------------------------------------------------------------
