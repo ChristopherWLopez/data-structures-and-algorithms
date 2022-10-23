@@ -8,10 +8,9 @@ Write a function named returnTen, takes in a string and uses split and splice to
 ------------------------------------------------------------------------------------------------ */
 
 function returnTen(str){
-  // Solution code here...
-  return str.split(' ').splice(-10);
+  let newArr = str.split('').splice(4,5);
+  return newArr;
 }
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -27,9 +26,12 @@ For example:
 return: 23
 ------------------------------------------------------------------------------------------------ */
 const findMax = (matrix) => {
+  let higestNumber = [];
   // Solution code here...
   for (let i = 0; i < matrix.length; i++){
-    if ( matrix[i] < )
+    for (let j = 0; j < matrix.length[j]; j++){
+      matrix.filter( matrix => matrix < mat)
+    }
   }
 };
 
@@ -76,7 +78,13 @@ const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
   // Solution code here...
-
+  let sales = Array(hoursOpen.length).fill(0);
+  for (let i = 0; i <stores.length; i++){
+    for(let j = 0; j <sales.length;j ++ ){
+      sales[j] += stores[i][j];
+    }
+  }
+  return sales;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -91,6 +99,9 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 
 const salesData = (hours, data) => {
   // Solution code here...
+  let newArr = [];
+  hours.forEach((hour, i) => newArr.push({sales: data[i] + ' cookies' , time: hour }));
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
