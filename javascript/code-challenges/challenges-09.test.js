@@ -8,7 +8,14 @@ using the 'reduce' method.
 
 E.g. [4,2,7,5,9,2] -> 9
 ------------------------------------------------------------------------------------------------ */
-const maxInArray = (arr) => Math.max.apply(null, arr);
+
+
+const maxInArray = (arr) => arr.reduce(...arr);
+Math.max.reduce()
+// got this from reviewing the class code challenge.
+// Math.max.apply(null,arr);
+// const maxInArray = (arr) => Math.max.applu(null, arr);
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -22,7 +29,12 @@ const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningT
   finalExam: true
 };
 
+
 const getCourseKeys = (obj) => Object.keys(obj);
+
+// const getCourseKeys = (obj) => Object.keys(courseInfo);
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -54,7 +66,12 @@ HR has asked you to change the data to make it easier to print so that it looks 
 
 ------------------------------------------------------------------------------------------------ */
 
+// const updateNumbers = (obj) => {
+
 const updateNumbers = (obj) => Object.entries(obj).map(element => element.join(': '));
+// };
+// const updateNumbers = (obj) => Object.entries(obj).map(element => element.join(': '));
+
 
 
 
@@ -109,7 +126,10 @@ const characters = [
 
 const getHouses = (arr) => {
   let houses = [];
-  houses = arr.map(character => Object.entries(character).pop().pop());
+
+  // Solution code here...
+  houses = arr.map( character => Object.entries(character.pop().pop()));
+
   return houses;
 };
 
@@ -125,7 +145,12 @@ hasChildrenValues(characters, 'Cersei') will return true
 hasChildrenValues(characters, 'Sansa') will return false
 ------------------------------------------------------------------------------------------------ */
 
+
 const hasChildrenValues = (arr, character) => Object.values(arr).find(element => element.name === character && element.children);
+
+
+// They covered this one In class, I spent some time reading this one trying to understand it, and i cant say I completely understand it. However I am turning this in. This one is a hard one for me to get.
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
