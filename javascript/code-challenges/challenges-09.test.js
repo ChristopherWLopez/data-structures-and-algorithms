@@ -10,11 +10,11 @@ E.g. [4,2,7,5,9,2] -> 9
 ------------------------------------------------------------------------------------------------ */
 
 
-const maxInArray = (arr) => arr.reduce(...arr);
-Math.max.reduce()
+// const maxInArray = (arr) => arr.reduce(...arr);
+// Math.max.reduce()
 // got this from reviewing the class code challenge.
 // Math.max.apply(null,arr);
-// const maxInArray = (arr) => Math.max.applu(null, arr);
+const maxInArray = (arr) => Math.max.apply(null, arr);
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -128,7 +128,7 @@ const getHouses = (arr) => {
   let houses = [];
 
   // Solution code here...
-  houses = arr.map( character => Object.entries(character.pop().pop()));
+  houses = arr.map( character => Object.entries(character).pop().pop());
 
   return houses;
 };
