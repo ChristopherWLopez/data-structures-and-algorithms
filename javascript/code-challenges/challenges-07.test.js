@@ -129,7 +129,13 @@ const gruffaloCrumble = {
 
 const listFoods = (recipe) => {
   let result = [];
-  result.push(recipe.ingredients.split(0, 1));
+
+  recipe.ingredients.forEach( ingredient => {
+    let withOutAmount = ingredient.slice( ingredient.indexOf(' ')+1);
+    let withOutUnits = withOutAmount.slice( withOutAmount.indexOf(' ')+1);
+    result.push(withOutUnits);
+  } );
+  // Solution code here...
   return result;
 };
 
