@@ -38,6 +38,9 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 
 const count = (target, input) => {
   // Solution code here...
+
+
+
   let count = 0;
   input.map(values => {
     values.map((value) => {
@@ -45,6 +48,7 @@ const count = (target, input) => {
     });
   });
   return count;
+
 };
 
 
@@ -76,12 +80,15 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 
 const divisibleByFiveTwoToThePower = (input) => {
   // Solution code here...
+
+
   let newArr = [];
   for (let element of input){
     let someArr = [];
     element.forEach(int => Number.isInteger(int) ? (int%5 === 0 ? arr.push(Math.pow(2, int)) :0):0);
   }
   return newArr;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
