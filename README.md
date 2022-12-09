@@ -6,7 +6,7 @@ This challend was to take in an array and to white board the process of reversin
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
-[./images/whiteboard.png]
+[../images/whiteboard.png](whiteboard )
 
 ## Approach & Efficiency
 <!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
