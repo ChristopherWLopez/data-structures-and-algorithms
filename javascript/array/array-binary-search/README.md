@@ -12,4 +12,4 @@ This process was a collaborative effort between Andra and myself. We spent some 
 
 **still learning Big O**
 
-![]
+![](./../../.././images/whiteboard%20binary.png);
