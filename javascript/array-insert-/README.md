@@ -11,3 +11,5 @@ test cases, visualize, algo, big O
 <!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
 
 This is still a work in progress.
+
+![whiteboard](/images/insert.png);
