@@ -5,7 +5,7 @@ const Node = require("./node");
 // adds a node to the head
 class LinkedList {
   constructor() {
-    this.head = null;
+    this.head = null;  
   }
 
   insert(value) {
