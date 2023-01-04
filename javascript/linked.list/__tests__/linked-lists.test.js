@@ -26,8 +26,11 @@ describe('Linked list tests', ()=>{
 
 describe('linked list insertion test', ()=>{
 
-    it('insert node in the middle as long',()=>{
-        const newNode = new Node
+    it('tests inserBefore: add a node with a given new value before the first node with the given value',()=>{
 
-    })
-})
+        let insertBeforeLinkedList = new LinkedList();
+        insertBeforeLinkedList.head({value: 1, next: { value:3, next: {value: 4, next: null } } })
+        let newList = insert
+        expect(newList).toEqual({value: 1, next: { value: 2, next: { value: 3, next: {value: 4, next:null},},},},
+    });
+});
