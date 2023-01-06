@@ -2,7 +2,7 @@
 
 const Node = require('../linked-list-implementation/node');
 const LinkedList = require('../linked-list-implementation/linked-lists');
-const { default: test } = require('node:test');
+
 // const { it } = require('node:test');
 // const { default: expect } = require('expect');
 
@@ -22,6 +22,7 @@ const { default: test } = require('node:test');
         console.log(ll);
         expect(ll).toEqual(true);
     })
+
 
 
     test("tests insertBefore: adds a node with a given new value immediately before the first node with the given value", () => {
@@ -114,3 +115,41 @@ const { default: test } = require('node:test');
         expect(llKthBad.kthFromEnd(10)).toBe(undefined);
       });
     
+});
+
+// describe('linked list insertion test', ()=>{
+
+//     it('tests inserBefore: add a node with a given new value before the first node with the given value',()=>{
+
+//         let insertBeforeLinkedList = new LinkedList();
+//         insertBeforeLinkedList.head({value: 1, next: { value:3, next: {value: 4, next: null } } })
+//         let newList = insert
+//         expect(newList).toEqual({value: 1, next: { value: 2, next: { value: 3, next: {value: 4, next:null},},},},
+//     });
+// });
+
+ describe("kth", ()=> {
+    test("It returns the value of the node kth from the end of the list",()=>{
+
+        // created instance of the linked list class
+        let llkth = new LinkedList();
+        // assigning the head and everything that follows in the linked list
+        llkth.head = {
+            value: 1,
+            next: {
+                value: 2,
+                next: {
+                    value: 3,
+                    next: {
+                        value: 4,
+                        next: null,
+                    },
+                },
+            },
+
+        };
+        expect(llkth.kthFromTheEnd(1)).toBe(3);
+    });
+
+ });
+
