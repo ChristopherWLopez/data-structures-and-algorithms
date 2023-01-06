@@ -43,6 +43,20 @@ class LinkedList {
     string += "NULL";
     return string;
   }
+
+    kthFromEnd(k){
+      let counter = 0;
+      let current = this.head;
+
+      while(current){
+        current++;
+        current = current.next;
+      }
+      let target = counter - (k+1);
+      if(target < 0) return undefined;
+      
+    }
+
 }
 
 let list = new LinkedList();
