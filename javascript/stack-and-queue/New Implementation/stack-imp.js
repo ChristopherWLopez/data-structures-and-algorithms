@@ -1,6 +1,11 @@
 'use strict';
 
-const node = require('../../linked.list/linked-list-implementation/node');
+class Node{
+  constructor(value){
+    this.value = value;
+    this.next = null;
+  }
+}
 
 
 class Stack{
@@ -8,14 +13,11 @@ class Stack{
       this.top = null
     }
   
-    push(element){
+    push(value){
       // create new node with value of element being brought in via the function
-      let node = new Node(element)
-      // console.log(node)
-      if(this.top) node.next = this.top
-      // new Node.next is arrigned to top
-      
-      this.top = node
+      let newNode = new Node(value);
+      newNode.next = this.top;
+      this.top = newNode;
     }
   
     pop(){
@@ -32,4 +34,11 @@ class Stack{
       }
   
     }
+
+    is_empty(){
+      return this.top === null;
+    }
+    
   }
+  
+  module.exports = Stack;
