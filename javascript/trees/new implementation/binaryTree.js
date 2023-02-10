@@ -104,6 +104,10 @@ class BST extends BinaryTree {
       }
     }
   }
+
+  treeMax(){
+    
+  }
 }
 
 module.exports = { BinaryTree, Node, BST };
