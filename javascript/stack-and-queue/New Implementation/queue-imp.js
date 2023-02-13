@@ -49,6 +49,22 @@ class Queue{
         }
     }
 
+    is_empty(){
+        return this.front===null;
+    }
+
+    toString(){
+        let string = ""
+        let current = this.head;
+        while(current!=null){
+            string+=`{ ${current.value } } => `;
+            current = current.next;
+        }
+
+        string += "NULL";
+        return string;
+    }
+    
 }
 
 module.exports = Queue;
