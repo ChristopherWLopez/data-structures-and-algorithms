@@ -38,7 +38,19 @@ class Stack{
     is_empty(){
       return this.top === null;
     }
-    
+
+    toString(){
+      let string = ""
+      let current = this.top;
+      while (current!=null){
+        string+=`{ ${current.value } } => `;
+
+        current= current.next;
+      }
+
+      string +="NULL";
+      return string;
+    }
   }
   
   module.exports = Stack;
