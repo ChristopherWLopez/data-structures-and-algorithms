@@ -1,7 +1,20 @@
 'use strict';
+const { movies }  = require("./movies");
 
+// const yearComp = (a,b) => {
+//     return b.year - a.year
+// }
 
-
-export function sort (a,b){
+function year(movies){
     
+    return movies.sort((a,b)=> b.year-a.year); 
+    }
+
+
+
+function title(movies){
+    return movies.sort((a,b)=> {
+
+    })
 }
+module.exports = { year,  }
