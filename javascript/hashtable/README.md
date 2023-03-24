@@ -1,11 +1,15 @@
 # Challenge Title
-<!-- Description of the challenge -->
+
+hashmap implementation
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+ This assignment was to implement various hashmap functions where we are able to set the key, get the key check if there is a key `has()` and also a way to return all the keys.
 
 ## Solution
-<!-- Show how to run your code, and examples of it in action -->
+
+this code can be run via node or simply found at
+
+[<https://github.com/BedlaminGoliath/data-structures-and-algorithms>](dats structures and algorithms)
