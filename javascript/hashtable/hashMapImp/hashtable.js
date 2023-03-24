@@ -1,6 +1,6 @@
 'use strict';
 
-const { linkedList, LinkedList } = require('./linked-list');
+const { linkedList, LinkedList } = require('../linked-list');
 // class Entry{
 //     constructor(key){
 //         this.key = key;
