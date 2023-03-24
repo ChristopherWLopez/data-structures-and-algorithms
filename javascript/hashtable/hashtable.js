@@ -62,8 +62,24 @@ class HashTable{
     }
 
     keys(){
+        //created new array
         let keys=[];
-
+        //itterate through the table
+        this.table.forEach(bucket => {
+            //check if there is a bucket
+            if(this.bucket){
+                //assign the bucket head node to a current var
+                let current = bucket.head;
+                //itterate through linked list
+                while(current){
+                    //append keys to keys array
+                    keys.append(Object.keys(current.value)[0]);
+                    //move along linked list
+                    current = current.next
+                }
+            } 
+        });
+        return keys;
     }
     
 }
