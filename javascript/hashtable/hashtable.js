@@ -84,7 +84,4 @@ class HashTable{
     
 }
 
-let table = new HashTable(2);
-console.log(table);
-
 module.exports = HashTable;
