@@ -1,6 +1,10 @@
 'use strict';
 
+<<<<<<< HEAD:javascript/hashtable/hashMapImp/hashtable.js
+const { linkedList, LinkedList } = require('../linked-list');
+=======
 const { LinkedList } = require('./linked-list');
+>>>>>>> main:javascript/hashtable/hashtable.js
 // class Entry{
 //     constructor(key){
 //         this.key = key;
