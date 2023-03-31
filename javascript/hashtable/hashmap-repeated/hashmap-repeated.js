@@ -10,3 +10,4 @@ function hashMapRepeat(str){
     }
 }
 
+module.exports = hashMapRepeat;
