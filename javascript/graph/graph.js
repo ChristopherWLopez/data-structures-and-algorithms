@@ -25,6 +25,16 @@ class Graph{
         let neighbors = this.edges.get(start);
         neighbors.push(newEdge);
     }
+
+    getNeighbors(vertex){
+        return this.edges.get(vertex);
+    }
+
+    getSize(){
+        return this.vertices.size;
+    }
+
+    
 }
 
 
