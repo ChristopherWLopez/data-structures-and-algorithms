@@ -34,7 +34,10 @@ class Graph{
         return this.vertices.size;
     }
 
-    
+
+    breathFirst(){
+        
+    }
 }
 
 
