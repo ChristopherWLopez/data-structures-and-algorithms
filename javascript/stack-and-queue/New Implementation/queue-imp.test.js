@@ -49,6 +49,6 @@ const Queue = require ("./queue-imp");
         let newQueue = new Queue();
         expect(()=>{
             newQueue.dequeue();
-        }).toThrow("this queue is empty");
+        }).toThrow("this is empty");
     });
  });
