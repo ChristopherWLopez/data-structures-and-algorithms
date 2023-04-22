@@ -35,8 +35,19 @@ class Graph{
     }
 
 
-    breathFirst(){
-        
+    breathFirst(graph, start){
+        let traversal = [];
+        let visited = new Set();
+        visited.add(start)
+        while(traversal.length>0){
+            let current = traversal.pop();
+            this.getNeighbors(start)
+            .filter(n=> !visited.has(n))
+            .forEach(n=>{
+                visited.add(n);
+                traversal.shift(n);
+            })
+        }
     }
 }
 
