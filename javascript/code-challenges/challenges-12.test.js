@@ -6,11 +6,16 @@ CHALLENGE 1 - Review
 Write a function named replaceZeros that, given a string, uses Regex to replace all '0' with the word 'zero'.
 ------------------------------------------------------------------------------------------------ */
 
+<<<<<<< HEAD
 // We did code review in class. I did  have guidence, for A couple of these.
 
 const replaceZeros = (string) => {
   const pattern = /[0]/g;
   return string.replace(pattern,'zero');
+=======
+const replaceZeros = (string) => {
+  // Solution code here...
+>>>>>>> 74a267581670dda411fc877d6506c10a60c0d3b9
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -21,9 +26,15 @@ Write a function named validatePin that uses a regular expression pattern to val
 If the PIN is four numerical digits long, return true. Otherwise, return false.
 ------------------------------------------------------------------------------------------------ */
 
+<<<<<<< HEAD
 const validatePin = (pin) => /^\d{4}$/.test(pin);
 
 
+=======
+const validatePin = (pin) => {
+  // Solution code here...
+};
+>>>>>>> 74a267581670dda411fc877d6506c10a60c0d3b9
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -33,7 +44,13 @@ Write a function named validateWord that uses a regular expression pattern to va
 If the word is between 5 and 10 characters long, return true. Otherwise, return false.
 ------------------------------------------------------------------------------------------------ */
 
+<<<<<<< HEAD
 const validateWord = (word) => /^[A-z]{5,10}$/g.test(word);
+=======
+const validateWord = (word) => {
+  // Solution code here...
+};
+>>>>>>> 74a267581670dda411fc877d6506c10a60c0d3b9
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -43,7 +60,13 @@ Write a function named hasNumber that uses a regular expression pattern to deter
 If it does, return true. If not, return false.
 ------------------------------------------------------------------------------------------------ */
 
+<<<<<<< HEAD
 const hasNumber = (string) => /[A-z][0-9]/g.test(string);
+=======
+const hasNumber = (string) => {
+  // Solution code here...
+};
+>>>>>>> 74a267581670dda411fc877d6506c10a60c0d3b9
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -61,9 +84,16 @@ Return either true or false.
 Note: if you ever need to validate an email using a regex in practice, the Internet has the actual regex you should use. It's many many lines long.
 ------------------------------------------------------------------------------------------------ */
 
+<<<<<<< HEAD
 const validateEmail = (email) => /^[A-z0-9]+($|\.*[A-z0-9]*)@[A-z0-9]+(\.net|\.com|\.org)\b/g.test(email);
 
 // this was one Im still trying to understand how Ethan came up with this, I will keep trying to break it down.
+=======
+const validateEmail = (email) => {
+  // Solution code here...
+};
+
+>>>>>>> 74a267581670dda411fc877d6506c10a60c0d3b9
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
