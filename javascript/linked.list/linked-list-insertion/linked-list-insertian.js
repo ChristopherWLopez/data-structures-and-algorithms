@@ -48,7 +48,7 @@ class LinkedList {
     return string;
   }
 
-  // add a node with thie given value
+  // add a node with the given value
   appendLink(value) {
     // add a node at the end of the list with the "newValue"
     // create the new valued node
