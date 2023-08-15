@@ -13,3 +13,4 @@ twoSums(mySums, myTarget);
 
   throw new Error('No solution found');
 }
+
