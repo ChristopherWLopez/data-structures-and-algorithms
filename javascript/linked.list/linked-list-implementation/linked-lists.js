@@ -49,7 +49,7 @@ class LinkedList {
       let current = this.head;
 
       while(current){
-        current++;
+        counter++;
         current = current.next;
       }
       let target = counter - (k+1);
