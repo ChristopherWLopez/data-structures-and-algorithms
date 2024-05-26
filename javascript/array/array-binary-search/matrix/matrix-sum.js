@@ -15,3 +15,25 @@ const sumOfMatric =(matrix)=>{
     }
     return total;
 }
+
+// refactoring this code because of errors
+
+function sumMatrix(matr){
+
+    const sumArray = [];
+
+    for(let i = 0;i<matr.length;i++){
+        
+        let sum = 0;
+
+        for(let j=0;j<matr[i];j++){
+
+             sum += matr[i][j];
+
+        }
+
+        sumArray.push(sum);
+    }
+    
+    return sumArray;
+}
