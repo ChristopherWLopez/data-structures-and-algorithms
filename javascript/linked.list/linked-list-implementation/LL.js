@@ -49,4 +49,17 @@ class LinkedList {
         return string;
     }
 
+    append(value){
+
+       if(!this.head){
+        let newNode = new Node(value);
+        return this.head;
+       } else {
+
+        let current = this.head;
+        while()
+       }
+        
+       
+    }
 }
