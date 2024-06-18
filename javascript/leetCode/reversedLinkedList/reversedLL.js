@@ -1,6 +1,6 @@
 'use strict';
 
-var reverseList = function(head) {
+let reverseList = function(head) {
     let prev = null;
     let current = head;
 
